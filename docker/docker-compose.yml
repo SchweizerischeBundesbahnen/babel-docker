@@ -1,6 +1,6 @@
 # https://wiki.eclipse.org/Babel_/_Server_Tool_Development_Process#Setting_up_a_Development_Environment
 babel:
-  image: babel-docker:latest
+  image: schweizerischebundesbahnen/babel-docker:latest
   volumes:
     - babel_addons:/var/www/babel/addons
     - babel_logs:/var/log/httpd
