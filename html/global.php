@@ -25,6 +25,9 @@ require_once(dirname(__FILE__) . "/../classes/system/user.class.php");
 # Roger: set default_charset
 ini_set('default_charset', 'utf-8');
 
+# RG: unset 30s timeouts
+ini_set("max_execution_time", 0);
+
 session_name(COOKIE_SESSION);
 session_start();
 extract($_SESSION);
